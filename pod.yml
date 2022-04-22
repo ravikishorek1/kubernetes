@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod1
+spec:
+  containers:
+    - name: nginx-ravi
+      image: nginx
+      ports:
+        - containerPort: 81
+    - name: watcher-ravi
+      image: afakharany/watcher
